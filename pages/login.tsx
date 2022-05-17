@@ -31,7 +31,7 @@ function Login() {
               signIn('google', { callbackUrl: '/' })
             }}
             type="button"
-            className="to-blue-orange mr-2 mb-2 rounded-lg bg-gradient-to-r from-orange-400 via-orange-500 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-orange-500/50 hover:bg-gradient-to-br focus:ring-4 focus:ring-orange-300 dark:shadow-lg dark:shadow-orange-800/80 dark:focus:ring-orange-800"
+            className="to-blue-slate mr-2 mb-2 rounded-lg bg-gradient-to-r from-slate-400 via-slate-500 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-slate-500/50 hover:bg-gradient-to-br focus:ring-4 focus:ring-slate-300 dark:shadow-lg dark:shadow-slate-800/80 dark:focus:ring-slate-800"
           >
             Login with Google
           </button>
@@ -55,12 +55,4 @@ function Login() {
 
 export default Login
 
-export async function getServerSideProps() {
-  const providers = await getProviders()
 
-  return {
-    props: {
-      providers,
-    },
-  }
-}
